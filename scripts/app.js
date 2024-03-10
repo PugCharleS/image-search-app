@@ -11,7 +11,7 @@ const fetchImages = async (query) => {
     const data = await response.json();
     clearResults();
     data.results.forEach((image) => {
-        addImage(image.urls.regular);
+        addImage(image.urls.regular, image.alt_description);
     });
     return data;
 };
