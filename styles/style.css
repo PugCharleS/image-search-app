@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body, html {
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    flex: 1;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: 100vh;
+    width: 80%;
+}
+
+.container h1 {
+    margin-bottom: 10px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search input {
+    width: 80%;
+    height: 36px;
+    padding: 0px 8px;
+    border: 1px solid #505050;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    line-height: 24px;
+    outline: none;
+}
+
+.search button {
+    cursor: pointer;
+    width: 20%;
+    height: 36px;
+    padding: 0px 8px;
+    border: 1px solid #030303;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #030303;
+    font-size: 14px;
+    line-height: 16px;
+    outline: none;
+}
+
+.results {
+    width: 100%;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 20px;
+}
+
+.results img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px #000;
+}
+
+.results .box {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    break-inside: avoid;
+}
+
+.results .box img {
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 10px;
+}
+
+img:hover {
+    opacity: 0.95;
+    box-shadow: 0 0 10px #fff;
+}
+
+.caption {
+    color: #fff;
+    padding: 2px;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .results {
+        columns: 2;
+    }
+
+}
